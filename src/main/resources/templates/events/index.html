@@ -14,10 +14,13 @@
     <thead>
         <tr>
             <th>Name</th>
+            <th>Event Description</th>
         </tr>
     </thead>
-    <tr th:block th:each="event : ${events}">
-        <td th:text="${event}"></td>
+    <tr th:each="eventMap : ${events}">
+        <td th:text="${eventMap.key}">Event Name</td>
+        <td th:text="${eventMap.value}">Event Description</td>
+        <td th:replace="fragments :: address"></td>
     </tr>
 </table>
 </body>

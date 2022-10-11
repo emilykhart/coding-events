@@ -1,4 +1,10 @@
 body {
     font-size: 18px;
-    color: purple;
+    color: pink;
+}
+
+.table{
+    width: auto;
+    margin: 0 auto;
+    color: blue;
 }
